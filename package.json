@@ -65,12 +65,12 @@
     "coverage": "nyc --reporter=lcov npm test"
   },
   "engines": {
-    "node" : ">=14.0.0",
-    "npm" : ">=6.0.0"
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
   },
   "bugs": {
-    "url" : "https://github.com/thelovekesh/webscaf/issues",
-    "email" : "project@webscaf.org"
+    "url": "https://github.com/thelovekesh/webscaf/issues",
+    "email": "project@webscaf.org"
   },
   "keywords": [
     "cli",
