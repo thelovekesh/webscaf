@@ -58,18 +58,24 @@
     "build": "shx rm -rf dist && tsc -b",
     "lint": "eslint . --ext .ts --config .eslintrc",
     "postpack": "shx rm -f oclif.manifest.json",
-    "posttest": "yarn lint",
-    "prepack": "yarn build && oclif manifest && oclif readme",
+    "posttest": "npm run lint",
+    "prepack": "npm run build && oclif manifest && oclif readme",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif readme && git add README.md",
-    "coverage": "nyc --reporter=lcov npm run test"
+    "coverage": "nyc --reporter=lcov npm test"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node" : ">=14.0.0",
+    "npm" : ">=6.0.0"
   },
-  "bugs": "https://github.com/thelovekesh/webscaf/issues",
+  "bugs": {
+    "url" : "https://github.com/thelovekesh/webscaf/issues",
+    "email" : "project@webscaf.org"
+  },
   "keywords": [
-    "oclif"
+    "cli",
+    "web",
+    "scaffold"
   ],
   "types": "dist/index.d.ts"
 }
