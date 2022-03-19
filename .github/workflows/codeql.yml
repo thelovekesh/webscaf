@@ -5,14 +5,10 @@ concurrency:
   cancel-in-progress: true
 
 on:
-  paths:
-    - '**/*.{js,jsx,ts,tsx}'
   push:
     branches:
       - develop
   pull_request:
-    paths:
-      - '**/*.{js,jsx,ts,tsx}'
     branches:
       - develop
 
