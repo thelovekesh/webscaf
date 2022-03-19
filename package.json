@@ -18,8 +18,12 @@
   ],
   "dependencies": {
     "@oclif/core": "^1",
+    "@oclif/plugin-autocomplete": "1.2.0",
     "@oclif/plugin-help": "^5",
-    "@oclif/plugin-plugins": "^2.0.1"
+    "@oclif/plugin-not-found": "2.3.1",
+    "@oclif/plugin-plugins": "^2.0.1",
+    "@oclif/plugin-update": "3.0.0",
+    "@oclif/plugin-warn-if-update-available": "2.0.4"
   },
   "devDependencies": {
     "@oclif/test": "^2",
@@ -44,9 +48,17 @@
     "dirname": "webscaf",
     "commands": "./dist/commands",
     "plugins": [
+      "@oclif/plugin-autocomplete",
       "@oclif/plugin-help",
-      "@oclif/plugin-plugins"
+      "@oclif/plugin-plugins",
+      "@oclif/plugin-not-found",
+      "@oclif/plugin-update",
+      "@oclif/plugin-warn-if-update-available"
     ],
+    "warn-if-update-available": {
+      "timeoutInDays": 7,
+      "message": "<%= config.name %> update available from <%= chalk.greenBright(config.version) %> to <%= chalk.greenBright(latest) %>."
+    },
     "topicSeparator": " ",
     "topics": {
       "hello": {
