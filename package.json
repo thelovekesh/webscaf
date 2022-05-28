@@ -25,7 +25,8 @@
     "@oclif/plugin-update": "3.0.0",
     "@oclif/plugin-warn-if-update-available": "2.0.4",
     "chalk": "5.0.1",
-    "inquirer": "8.2.4"
+    "inquirer": "8.2.4",
+    "@types/inquirer": "8.2.1"
   },
   "devDependencies": {
     "@oclif/test": "^2",
@@ -79,6 +80,7 @@
     "posttest": "npm run lint",
     "prepack": "npm run build && oclif manifest && oclif readme",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "start": "shx rm -rf dist && tsc -b -w",
     "version": "oclif readme && git add README.md",
     "coverage": "nyc --reporter=lcov npm test",
     "prepare": "husky install"
