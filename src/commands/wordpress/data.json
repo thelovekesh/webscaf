@@ -1,0 +1,13 @@
+{
+  "themes": {
+    "classic": [{
+      "name": "blank-theme",
+      "repo" : "https://github.com/webscaf/blank-theme.git"
+    }],
+    "block": [{
+      "name": "theme-elementary",
+      "repo": "https://github.com/webscaf/theme-elementary.git"
+    }]
+  },
+  "plugins": {}
+}
