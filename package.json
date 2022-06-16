@@ -39,7 +39,7 @@
     "eslint-config-oclif-typescript": "^1.0.2",
     "globby": "^13",
     "husky": "8.0.1",
-    "lint-staged": "13.0.1",
+    "lint-staged": "13.0.2",
     "mocha": "^10",
     "nyc": "^15.1.0",
     "oclif": "^3",
