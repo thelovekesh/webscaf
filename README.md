@@ -1,14 +1,21 @@
-Webscaf CLI
-=================
+# Webscaf CLI
+
 Generate projects scaffold for any web project :rocket:
 
+![Project Status: Moved](https://www.repostatus.org/badges/latest/moved.svg)
+
+> I started this project to help me to learn Typescript and create a CLI for web projects. I will be building this project at [webscaf/cli](https://github.com/webscaf/cli) and adding more features from scratch.
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
+
 ```sh-session
 $ npm install -g webscaf
 $ webscaf COMMAND
@@ -20,22 +27,26 @@ USAGE
   $ webscaf COMMAND
 ...
 ```
+
 <!-- usagestop -->
+
 # Commands
+
 <!-- commands -->
-* [`webscaf autocomplete [SHELL]`](#webscaf-autocomplete-shell)
-* [`webscaf help [COMMAND]`](#webscaf-help-command)
-* [`webscaf plugins`](#webscaf-plugins)
-* [`webscaf plugins:install PLUGIN...`](#webscaf-pluginsinstall-plugin)
-* [`webscaf plugins:inspect PLUGIN...`](#webscaf-pluginsinspect-plugin)
-* [`webscaf plugins:install PLUGIN...`](#webscaf-pluginsinstall-plugin-1)
-* [`webscaf plugins:link PLUGIN`](#webscaf-pluginslink-plugin)
-* [`webscaf plugins:uninstall PLUGIN...`](#webscaf-pluginsuninstall-plugin)
-* [`webscaf plugins:uninstall PLUGIN...`](#webscaf-pluginsuninstall-plugin-1)
-* [`webscaf plugins:uninstall PLUGIN...`](#webscaf-pluginsuninstall-plugin-2)
-* [`webscaf plugins update`](#webscaf-plugins-update)
-* [`webscaf update [CHANNEL]`](#webscaf-update-channel)
-* [`webscaf wordpress theme`](#webscaf-wordpress-theme)
+
+- [`webscaf autocomplete [SHELL]`](#webscaf-autocomplete-shell)
+- [`webscaf help [COMMAND]`](#webscaf-help-command)
+- [`webscaf plugins`](#webscaf-plugins)
+- [`webscaf plugins:install PLUGIN...`](#webscaf-pluginsinstall-plugin)
+- [`webscaf plugins:inspect PLUGIN...`](#webscaf-pluginsinspect-plugin)
+- [`webscaf plugins:install PLUGIN...`](#webscaf-pluginsinstall-plugin-1)
+- [`webscaf plugins:link PLUGIN`](#webscaf-pluginslink-plugin)
+- [`webscaf plugins:uninstall PLUGIN...`](#webscaf-pluginsuninstall-plugin)
+- [`webscaf plugins:uninstall PLUGIN...`](#webscaf-pluginsuninstall-plugin-1)
+- [`webscaf plugins:uninstall PLUGIN...`](#webscaf-pluginsuninstall-plugin-2)
+- [`webscaf plugins update`](#webscaf-plugins-update)
+- [`webscaf update [CHANNEL]`](#webscaf-update-channel)
+- [`webscaf wordpress theme`](#webscaf-wordpress-theme)
 
 ## `webscaf autocomplete [SHELL]`
 
@@ -137,7 +148,7 @@ ALIASES
   $ webscaf plugins add
 
 EXAMPLES
-  $ webscaf plugins:install myplugin 
+  $ webscaf plugins:install myplugin
 
   $ webscaf plugins:install https://github.com/someuser/someplugin
 
@@ -197,7 +208,7 @@ ALIASES
   $ webscaf plugins add
 
 EXAMPLES
-  $ webscaf plugins:install myplugin 
+  $ webscaf plugins:install myplugin
 
   $ webscaf plugins:install https://github.com/someuser/someplugin
 
@@ -359,4 +370,5 @@ _See code: [@oclif/plugin-update](https://github.com/oclif/plugin-update/blob/v3
 USAGE
   $ webscaf wordpress theme
 ```
+
 <!-- commandsstop -->
