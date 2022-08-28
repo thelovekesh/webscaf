@@ -1,13 +1,7 @@
-oclif-hello-world
+Webscaf CLI
 =================
+Generate projects scaffold for any web project :rocket:
 
-oclif example Hello World CLI
-
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/oclif-hello-world.svg)](https://npmjs.org/package/oclif-hello-world)
-[![CircleCI](https://circleci.com/gh/oclif/hello-world/tree/main.svg?style=shield)](https://circleci.com/gh/oclif/hello-world/tree/main)
-[![Downloads/week](https://img.shields.io/npm/dw/oclif-hello-world.svg)](https://npmjs.org/package/oclif-hello-world)
-[![License](https://img.shields.io/npm/l/oclif-hello-world.svg)](https://github.com/oclif/hello-world/blob/main/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -20,7 +14,7 @@ $ npm install -g webscaf
 $ webscaf COMMAND
 running command...
 $ webscaf (--version)
-webscaf/0.0.0 linux-x64 node-v14.19.0
+webscaf/1.0.1 linux-x64 node-v16.15.0
 $ webscaf --help [COMMAND]
 USAGE
   $ webscaf COMMAND
@@ -29,8 +23,7 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`webscaf hello PERSON`](#webscaf-hello-person)
-* [`webscaf hello world`](#webscaf-hello-world)
+* [`webscaf autocomplete [SHELL]`](#webscaf-autocomplete-shell)
 * [`webscaf help [COMMAND]`](#webscaf-help-command)
 * [`webscaf plugins`](#webscaf-plugins)
 * [`webscaf plugins:install PLUGIN...`](#webscaf-pluginsinstall-plugin)
@@ -41,46 +34,37 @@ USAGE
 * [`webscaf plugins:uninstall PLUGIN...`](#webscaf-pluginsuninstall-plugin-1)
 * [`webscaf plugins:uninstall PLUGIN...`](#webscaf-pluginsuninstall-plugin-2)
 * [`webscaf plugins update`](#webscaf-plugins-update)
+* [`webscaf update [CHANNEL]`](#webscaf-update-channel)
+* [`webscaf wordpress theme`](#webscaf-wordpress-theme)
 
-## `webscaf hello PERSON`
+## `webscaf autocomplete [SHELL]`
 
-Say hello
+display autocomplete installation instructions
 
 ```
 USAGE
-  $ webscaf hello [PERSON] -f <value>
+  $ webscaf autocomplete [SHELL] [-r]
 
 ARGUMENTS
-  PERSON  Person to say hello to
+  SHELL  shell type
 
 FLAGS
-  -f, --from=<value>  (required) Whom is saying hello
+  -r, --refresh-cache  Refresh cache (ignores displaying instructions)
 
 DESCRIPTION
-  Say hello
+  display autocomplete installation instructions
 
 EXAMPLES
-  $ oex hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
+  $ webscaf autocomplete
+
+  $ webscaf autocomplete bash
+
+  $ webscaf autocomplete zsh
+
+  $ webscaf autocomplete --refresh-cache
 ```
 
-_See code: [dist/commands/hello/index.ts](https://github.com/thelovekesh/webscaf/blob/v0.0.0/dist/commands/hello/index.ts)_
-
-## `webscaf hello world`
-
-Say hello world
-
-```
-USAGE
-  $ webscaf hello world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ oex hello world
-  hello world! (./src/commands/hello/world.ts)
-```
+_See code: [@oclif/plugin-autocomplete](https://github.com/oclif/plugin-autocomplete/blob/v1.3.0/src/commands/autocomplete/index.ts)_
 
 ## `webscaf help [COMMAND]`
 
@@ -330,5 +314,49 @@ FLAGS
 
 DESCRIPTION
   Update installed plugins.
+```
+
+## `webscaf update [CHANNEL]`
+
+update the webscaf CLI
+
+```
+USAGE
+  $ webscaf update [CHANNEL] [-a] [-v <value> | -i] [--force]
+
+FLAGS
+  -a, --available        Install a specific version.
+  -i, --interactive      Interactively select version to install. This is ignored if a channel is provided.
+  -v, --version=<value>  Install a specific version.
+  --force                Force a re-download of the requested version.
+
+DESCRIPTION
+  update the webscaf CLI
+
+EXAMPLES
+  Update to the stable channel:
+
+    $ webscaf update stable
+
+  Update to a specific version:
+
+    $ webscaf update --version 1.0.0
+
+  Interactively select version:
+
+    $ webscaf update --interactive
+
+  See available versions:
+
+    $ webscaf update --available
+```
+
+_See code: [@oclif/plugin-update](https://github.com/oclif/plugin-update/blob/v3.0.0/src/commands/update.ts)_
+
+## `webscaf wordpress theme`
+
+```
+USAGE
+  $ webscaf wordpress theme
 ```
 <!-- commandsstop -->
